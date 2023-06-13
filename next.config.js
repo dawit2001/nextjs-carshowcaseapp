@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const { Domain } = require("domain");
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ["cdn.imagin.studio"],
+  },
+};
+
+module.exports = nextConfig;
